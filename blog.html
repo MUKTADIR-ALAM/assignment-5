@@ -24,6 +24,8 @@
         },
       };
     </script>
+    <!-- font awsome cdn -->
+    <script src="https://kit.fontawesome.com/1b582a989e.js" crossorigin="anonymous"></script>
     <!-- google font inside css style tag -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
@@ -54,8 +56,62 @@
             </div>
           </div>
         </div>
-        <!-- navbar end -->
     </div>
+    <!-- navbar end -->
+
+    <section class="my-10 w-10/12 mx-auto space-y-10">
+        <h1 class="font-extrabold text-3xl">Important FAQ  <i class="fa-solid fa-question"></i></h1>
+        <div class="space-y-5">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p>The Document Object Model (DOM) is a programming interface for web documents, which defines the logical structure of documents and how they are accessed and manipulated. In web development, the DOM represents the HTML or XML of a webpage as a tree of nodes, where each part of the document (elements, attributes, and text) is a node that can be interacted with using JavaScript.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p><ul>
+                    <li><code>getElementById("id")</code>: Selects an element by its <code>id</code>.</li>
+                    <li><code>getElementsByClassName("class")</code>: Selects all elements with a specific class.</li>
+                    <li><code>getElementsByTagName("tag")</code>: Selects all elements with a specific tag name.</li>
+                    <li><code>querySelector("selector")</code>: Selects the first element that matches a CSS selector.</li>
+                    <li><code>querySelectorAll("selector")</code>: Selects all elements that match a CSS selector.</li>
+                    <li><code>parentNode</code>: Selects the parent of an element.</li>
+                    <li><code>children</code>: Selects the child elements of a parent.</li>
+                    <li><code>closest("selector")</code>: Selects the nearest ancestor matching the selector.</li>
+                </ul></p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>
+                    Event delegation in the context of the DOM is a technique where a single event listener is attached to a parent element, and it monitors events triggered by its child elements. Instead of adding event listeners to each individual child, the event is "delegated" to a common ancestor, which handles events as they propagate upward through the DOM (event bubbling).</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p><ul>
+                    <li><code>getAttribute("attributeName")</code>: Retrieves an attribute's value.</li>
+                    <li><code>setAttribute("attributeName", "value")</code>: Sets or updates an attribute.</li>
+                    <li><code>removeAttribute("attributeName")</code>: Removes an attribute.</li>
+                    <li><code>element.style.property = "value"</code>: Modifies an element's CSS inline.</li>
+                    <li>Example of changing color: <code>element.style.color = "blue"</code> changes the text color to blue.</li>
+                    <li>Example of changing background: <code>element.style.backgroundColor = "yellow"</code> changes the background color.</li>
+                    <li><code>element.classList.add("className")</code>: Adds a class.</li>
+                    <li><code>element.classList.remove("className")</code>: Removes a class.</li>
+                    <li><code>element.classList.contains("className")</code>: Checks if a class exists.</li>
+                </ul></p>
+                </div>
+              </div>
+        </div>
+    </section>
     <script src="./scripts/blog.js"></script>
 </body>
 </html>
