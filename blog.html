@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              btn_color: "#B4F461",
+            },
+            fontFamily: {
+              Lexend: ["Lexend", "system-ui"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- google font inside css style tag -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+    </style>
+    <title>Blog</title>
+</head>
+<body>
+    <!-- navbar start -->
+    <div class="sticky top-0 bg-slate-100/60 backdrop-blur-md">
+        <div class="navbar pt-3 pb-5">
+          <div class="w-full lg:w-10/12 mx-auto">
+            <div class="navbar-start">
+              <button id="home" class="btn bg-btn_color px-7 font-semibold lg:text-xl">
+                Home
+              </button>
+            </div>
+            <div
+              class="navbar-center space-x-1 lg:space-x-4 flex justify-center items-center"
+            >
+              <img class="w-6 lg:w-10" src="./assets/logo.png" alt="" />
+              <p class="lg:text-xl text-sm font-semibold">Donate Bangladesh</p>
+            </div>
+            <div class="navbar-end space-x-1 lg:space-x-2 flex items-center">
+              <img class="w-6 lg:w-10" src="./assets/coin.png" alt="" />
+              <p class="font-medium text-sm lg:text-xl text-slate-600">
+                <span id="walet-money">5500</span> BDT
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- navbar end -->
+    </div>
+    <script src="./scripts/blog.js"></script>
+</body>
+</html>

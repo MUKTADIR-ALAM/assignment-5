@@ -16,3 +16,8 @@ document.getElementById("donation-btn").addEventListener('click', ()=>{
     document.getElementById("history-btn").classList.remove('bg-btn_color');
     document.getElementById("history-btn").classList.add('bg-white' ,'border', 'border-slate-400');
 })
+
+
+document.getElementById('blog').addEventListener('click', ()=>{
+    window.location.replace('./blog.html');
+})
