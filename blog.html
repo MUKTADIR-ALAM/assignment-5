@@ -66,22 +66,22 @@
                 <input type="radio" name="my-accordion-2" checked="checked" />
                 <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
-                  <p>The Document Object Model (DOM) is a programming interface for web documents, which defines the logical structure of documents and how they are accessed and manipulated. In web development, the DOM represents the HTML or XML of a webpage as a tree of nodes, where each part of the document (elements, attributes, and text) is a node that can be interacted with using JavaScript.</p>
+                  <p>The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document—such as the HTML representing a web page—in memory. Usually it refers to JavaScript, even though modeling HTML, SVG, or XML documents as objects are not part of the core JavaScript language.The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.Nodes can also have event handlers attached to them. Once an event is triggered, the event handlers get executed.To learn more about what the DOM is and how it represents documents</p>
                 </div>
               </div>
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                 <div class="collapse-content">
-                  <p><ul>
-                    <li><code>getElementById("id")</code>: Selects an element by its <code>id</code>.</li>
-                    <li><code>getElementsByClassName("class")</code>: Selects all elements with a specific class.</li>
-                    <li><code>getElementsByTagName("tag")</code>: Selects all elements with a specific tag name.</li>
-                    <li><code>querySelector("selector")</code>: Selects the first element that matches a CSS selector.</li>
-                    <li><code>querySelectorAll("selector")</code>: Selects all elements that match a CSS selector.</li>
-                    <li><code>parentNode</code>: Selects the parent of an element.</li>
-                    <li><code>children</code>: Selects the child elements of a parent.</li>
-                    <li><code>closest("selector")</code>: Selects the nearest ancestor matching the selector.</li>
+                  <p><ul class="space-y-3">
+                    <li>getElementById("id"): Selects an element by its id.</li>
+                    <li>getElementsByClassName("class"): Selects all elements with a specific class.</li>
+                    <li>getElementsByTagName("tag"): Selects all elements with a specific tag name.</li>
+                    <li>querySelector("selector"): Selects the first element that matches a CSS selector.</li>
+                    <li>querySelectorAll("selector"): Selects all elements that match a CSS selector.</li>
+                    <li>parentNode: Selects the parent of an element.</li>
+                    <li>children: Selects the child elements of a parent.</li>
+                    <li>closest("selector"): Selects the nearest ancestor matching the selector.</li>
                 </ul></p>
                 </div>
               </div>
@@ -90,23 +90,23 @@
                 <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
                 <div class="collapse-content">
                   <p>
-                    Event delegation in the context of the DOM is a technique where a single event listener is attached to a parent element, and it monitors events triggered by its child elements. Instead of adding event listeners to each individual child, the event is "delegated" to a common ancestor, which handles events as they propagate upward through the DOM (event bubbling).</p>
+                    Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event listener to each and every similar element, we can add an event listener to a parent element and call an event on a particular target using the .target property of the event object.Implementing the same functionalities with an alternate approach. In this approach, we will associate the same function with all event listeners. We are creating too many responding functions (that all actually do the exact same thing). We could extract this function and just reference the function instead of creating too many functions:</p>
                 </div>
               </div>
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
                 <div class="collapse-content">
-                  <p><ul>
-                    <li><code>getAttribute("attributeName")</code>: Retrieves an attribute's value.</li>
-                    <li><code>setAttribute("attributeName", "value")</code>: Sets or updates an attribute.</li>
-                    <li><code>removeAttribute("attributeName")</code>: Removes an attribute.</li>
-                    <li><code>element.style.property = "value"</code>: Modifies an element's CSS inline.</li>
-                    <li>Example of changing color: <code>element.style.color = "blue"</code> changes the text color to blue.</li>
-                    <li>Example of changing background: <code>element.style.backgroundColor = "yellow"</code> changes the background color.</li>
-                    <li><code>element.classList.add("className")</code>: Adds a class.</li>
-                    <li><code>element.classList.remove("className")</code>: Removes a class.</li>
-                    <li><code>element.classList.contains("className")</code>: Checks if a class exists.</li>
+                  <p><ul class="space-y-3">
+                    <li>getAttribute("attributeName"): Retrieves an attribute's value.</li>
+                    <li>setAttribute("attributeName", "value"): Sets or updates an attribute.</li>
+                    <li>removeAttribute("attributeName"): Removes an attribute.</li>
+                    <li>element.style.property = "value": Modifies an element's CSS inline.</li>
+                    <li>Example of changing color: element.style.color = "blue" changes the text color to blue.</li>
+                    <li>Example of changing background: element.style.backgroundColor = "yellow" changes the background color.</li>
+                    <li>element.classList.add("className"): Adds a class.</li>
+                    <li>element.classList.remove("className"): Removes a class.</li>
+                    <li>element.classList.contains("className"): Checks if a class exists.</li>
                 </ul></p>
                 </div>
               </div>
